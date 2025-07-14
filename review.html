@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review - Book Review Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>Book Review Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="books.html" class="nav-link">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a href="review.html" class="nav-link active">Add Review</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Review Form -->
+    <div class="form-container">
+        <h1><i class="fas fa-star"></i> Write a Book Review</h1>
+        <p>Share your thoughts and help other readers discover great books!</p>
+        
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="bookSelect">Select Book *</label>
+                <select id="bookSelect" name="book" required>
+                    <option value="">Choose a book...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating *</label>
+                <input type="hidden" id="rating" name="rating" value="0" required>
+                <div class="star-rating">
+                    <span class="star" data-rating="1">★</span>
+                    <span class="star" data-rating="2">★</span>
+                    <span class="star" data-rating="3">★</span>
+                    <span class="star" data-rating="4">★</span>
+                    <span class="star" data-rating="5">★</span>
+                </div>
+                <small>Click on the stars to rate (1-5)</small>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Your Review *</label>
+                <textarea id="comment" name="comment" required placeholder="Share your thoughts about the book..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Submit Review
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Book Review Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

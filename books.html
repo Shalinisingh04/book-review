@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Book Review Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>Book Review Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="books.html" class="nav-link active">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a href="review.html" class="nav-link">Add Review</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Books Header -->
+    <section class="books-header">
+        <h1>Browse Our Book Collection</h1>
+        <p>Discover amazing books and read reviews from fellow readers</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="searchInput">Search:</label>
+                <input type="text" id="searchInput" placeholder="Search by title, author, or description...">
+            </div>
+            <div class="filter-group">
+                <label for="categoryFilter">Category:</label>
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="ratingFilter">Min Rating:</label>
+                <select id="ratingFilter">
+                    <option value="0">Any Rating</option>
+                    <option value="4">4+ Stars</option>
+                    <option value="3">3+ Stars</option>
+                    <option value="2">2+ Stars</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Grid -->
+    <section class="featured-books">
+        <div class="container">
+            <div id="booksContainer" class="books-grid">
+                <!-- Books will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Book Review Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
